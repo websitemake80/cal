@@ -53,7 +53,8 @@ body{
 .calculator span.equal{
     background: #98fb98;
 }
-@media (max-width: 520px) {
+
+@media (max-width: 520px){
     .calculator span{
         display: grid;
         width: 60px;
