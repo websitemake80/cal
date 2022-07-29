@@ -53,5 +53,35 @@ body{
 .calculator span.equal{
     background: #98fb98;
 }
+@media (max-width: 520px) {
+    .calculator span{
+        display: grid;
+        width: 60px;
+        height: 60px;
+        color: #0c2835;
+        background: #fff;
+        place-items: center;
+        border: 1px solid rgba(0,0,0,.1);
+        
+    }
+    .calculator span:active{
+        background: #00bfff;
+        color: #111;
+    }
+    .calculator span.clear{
+        grid-column: span 2;
+        width: 120px;
+        background: #ffa500;
+    }
+    .calculator span.plus{
+        grid-row: span 2;
+        height: 120px;
+    }
+    .calculator span.equal{
+        background: #98fb98;
+    }
+}
+
+
 
 
