@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d3d3d3;
+}
+.calculator{
+    position: relative;
+    display: grid;
+    box-shadow:  5px 5px #a9a9a9;
+    background: rgba(255, 255, 255, 0.1);
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator span{
+    display: grid;
+    width: 90px;
+    height: 90px;
+    color: #0c2835;
+    background: #fff;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+    font-size: 20px;
+}
+.calculator span:active{
+    background: #00bfff;
+    color: #111;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 180px;
+    background: #ffa500;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 180px;
+}
+.calculator span.equal{
+    background: #98fb98;
+}
+
+
